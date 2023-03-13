@@ -40,7 +40,7 @@ int main() {
 
 bool isVowel(char letter)
 {
-    if(letter == 'A' || 'a' || 'E' || 'e' || 'I' || 'i' || 'O' || 'o' || 'U' || 'u') {
+    if(letter == 'A' || letter == 'a' || letter == 'E' || letter == 'e' || letter == 'I' || letter == 'i' || letter == 'O' || letter == 'o' || letter == 'U' || letter == 'u') {
         vowelOrNot = true;
     }
     else{
