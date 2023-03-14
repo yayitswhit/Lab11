@@ -35,7 +35,7 @@ int main() {
         cout << "There is " << numOfVowels << " vowel." << endl;
     }
     else {
-        cout << "There are " << numOfVowels << " vowels." << endl;
+        cout << "There are " << numOfVowels << " vowels in this sentence." << endl;
     }
     return 0;
 }
