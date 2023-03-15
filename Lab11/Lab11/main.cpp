@@ -17,8 +17,6 @@ bool vowelOrNot; //is it a vowel or not?
 
 bool isVowel(char letter);
 int main() {
-    string name;
-    char character; //reads in character by character
     int numOfVowels = 0;
     cout << "Enter a sentence and then press enter:" << endl;
     while(character != '\n') {
@@ -32,7 +30,7 @@ int main() {
     
     //make sure english grammar is correct by using the sigular form of "is" for one vowel, "are" for more than one
     if(numOfVowels == 1) {
-        cout << "There is " << numOfVowels << " vowel." << endl;
+        cout << "There is " << numOfVowels << " vowel in this sentence." << endl;
     }
     else {
         cout << "There are " << numOfVowels << " vowels in this sentence." << endl;
@@ -42,11 +40,12 @@ int main() {
 
 bool isVowel(char letter)
 {
+    //Test if the char "letter" is a vowel, both uppercase and lowercase
+    //if it does, return a value of true - otherwise return false
     if(letter == 'A' || letter == 'a' || letter == 'E' || letter == 'e' || letter == 'I' || letter == 'i' || letter == 'O' || letter == 'o' || letter == 'U' || letter == 'u') {
-        vowelOrNot = true;
+        return true;
     }
     else{
-        vowelOrNot = false;
+        return false;
     }
-    return vowelOrNot;
 }
